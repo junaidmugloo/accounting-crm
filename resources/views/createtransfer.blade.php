@@ -91,53 +91,54 @@
         ***********************************-->
         <div class="content-body" style="margin-top: 5rem;">
 
-            <div class="container-fluid mt-5">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Bank List</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-bordered zero-configuration">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                           
-                                         
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                <h4 class="card-title">Balance Transfer</h4>
+                                <div class="basic-form">
+                                    <form>
+                                        
+                                        <div class="form-group">
+                                            <label>From Account:</label>
+                                            <select class="form-control" id="sel1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>To Account:</label>
+                                            <select class="form-control" id="sel1">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Note:</label>
+                                            <textarea placeholder="Write Transfer Note" class="form-control"></textarea>
+                                        </div>
+
+                                       
+                                       
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                <button type="submit" class="btn btn-primary">Create Now</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+             </div>
             <!-- #/ container -->
         </div>
         <!--**********************************
@@ -148,7 +149,7 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       @include('components/footer');
+       @include('components/footer')
         <!--**********************************
             Footer end
         ***********************************-->
@@ -184,13 +185,10 @@
     <script src="./plugins/chartist/js/chartist.min.js"></script>
     <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
 
-    <script src="./plugins/tables/js/jquery.dataTables.min.js"></script>
-    <script src="./plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
-    <script src="./plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+
 
     <script src="./js/dashboard/dashboard-1.js"></script>
 
 </body>
 
 </html>
-

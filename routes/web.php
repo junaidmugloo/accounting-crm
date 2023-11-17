@@ -25,6 +25,11 @@ Route::get('/addbank', function () {
 Route::get('/banklist', function () {
     return view('banklist');
 });
-
+Route::get('/addtransfer', function () {
+    return view('createtransfer');
+});
+Route::get('/transferlist', function () {
+    return view('transferlist');
+});
 Route::get('/all', [Accounts::class, 'index']);
 Route::post('/store', [Accounts::class, 'store']);
