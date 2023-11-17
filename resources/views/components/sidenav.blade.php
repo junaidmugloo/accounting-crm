@@ -12,7 +12,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i class="mdi mdi-magnify"></i></span>
                 </div>
-                <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
+                <input type="search" class="form-control w-80" placeholder="Search Dashboard" aria-label="Search Dashboard">
                 <div class="drop-down animated flipInX d-md-none">
                     <form action="#">
                         <input type="text" class="form-control" placeholder="Search">
@@ -183,7 +183,7 @@
         <ul class="metismenu" id="menu">
         
             <li>
-                <a class="" href="javascript:void()" aria-expanded="false">
+                <a class="" href="/" aria-expanded="false">
                     <i class="fa fa-solid fa-grid-2 menu-icon"></i><span class="nav-text">Dashboard</span>
                 </a>
             </li>

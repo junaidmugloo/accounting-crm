@@ -7679,7 +7679,9 @@ sub {
   padding: 0 0.9375rem;
   background: #fff;
   margin-left: 15.1875rem;
-  transition: all .2s ease; }
+  transition: all .2s ease; 
+background: linear-gradient(to right, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%); !important;
+}
   .header .header-content {
     height: 100%; }
 
@@ -7732,7 +7734,7 @@ sub {
 
 .header-left {
   float: left;
-  margin-left: 50px;
+  margin-left: 218px;
   height: 100%; }
   .header-left .icons {
     float: left;
@@ -7743,7 +7745,9 @@ sub {
       padding: 0 0.3125rem;
       color: #464a53; }
   .header-left .input-group {
-    margin-top: 17px; }
+    margin-top: 17px; 
+  width: 60vmin;
+  }
     .header-left .input-group input {
       border-radius: 5px !important; }
     .header-left .input-group .input-group-text {
@@ -8183,7 +8187,9 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
         background: #F3F1FA;
         color: #7571f9; }
       .nk-sidebar .metismenu > li.active > a {
-        background: #F3F1FA;
+      
+        background: linear-gradient(to right, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
         color: #464a53; }
       .nk-sidebar .metismenu > li.active ul a {
         color: #464a53; }
@@ -8205,12 +8211,14 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     .nk-sidebar .metismenu ul ul a {
       padding: 0.625rem 0.9375rem 0.625rem 3.75rem; }
     .nk-sidebar .metismenu .mega-menu ul.in li a:hover, .nk-sidebar .metismenu .mega-menu ul.in li a:focus, .nk-sidebar .metismenu .mega-menu ul.in li a.active {
-      color: #7571f9; }
+      color: #ffffff; }
     .nk-sidebar .metismenu a {
       transition: all 0.4s ease-in-out; }
       .nk-sidebar .metismenu a:hover, .nk-sidebar .metismenu a:active, .nk-sidebar .metismenu a.active {
         text-decoration: none;
-        background-color: #F3F1FA; }
+        background:linear-gradient(to right,dodgerblue,lightblue); 
+        color:#ffffff;
+      }
     .nk-sidebar .metismenu .has-arrow:after {
       position: absolute;
       content: "";
@@ -14137,7 +14145,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     [data-sibebarbg="color_2"] .nk-sidebar .metismenu a:hover, [data-sibebarbg="color_2"] .nk-sidebar .metismenu a:active, [data-sibebarbg="color_2"] .nk-sidebar .metismenu a.active {
       background-color: #05080b !important; }
     [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:hover > a, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:focus > a, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li.active > a {
-      background-color: #05080b !important; }
+      background: #05080b !important; }
       [data-sidebar-style="mini"][data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:hover > a, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:focus > a, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li.active > a {
         background-color: #05080b !important; }
         [data-sidebar-style="mini"][data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:hover > a:hover, [data-sidebar-style="mini"][data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:hover > a:focus, [data-sidebar-style="mini"][data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:hover > a:active, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:focus > a:hover, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:focus > a:focus, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li:focus > a:active, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li.active > a:hover, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li.active > a:focus, [data-sibebarbg="color_2"] .nk-sidebar .metismenu > li.active > a:active {

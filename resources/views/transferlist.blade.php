@@ -89,7 +89,7 @@
         <!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body" style="margin-top: 5rem;">
+        <div class="content-body" style="margin-top:5rem;">
 
             <div class="container-fluid mt-5">
                 <div class="row">
