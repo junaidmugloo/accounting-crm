@@ -326,6 +326,33 @@
 
             </li>
 
+
+            <li>
+                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <i class="fa-solid fa-chart-simple menu-icon"></i><span class="nav-text">Reports</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="./ui-accordion.html">Transections</a></li>
+                    <li><a href="./ui-alert.html">Account Balance</a></li>
+                    <li><a href="./ui-badge.html">Income</a></li>
+                    <li><a href="./ui-badge.html">Expense</a></li>
+                    <li><a href="./ui-badge.html">Trial Balance</a></li>
+                    <li><a href="./ui-badge.html">Income vs Expense</a></li>
+                    <li><a href="./ui-badge.html">Profit & Loss</a></li>
+                    <li><a href="./ui-badge.html">Balance Sheet</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a class="" href="javascript:void()" aria-expanded="false">
+                    <i class="fa-sharp fa-solid fa-building menu-icon"></i><span class="nav-text">Company</span>
+                </a>
+            </li>
+            <li>
+                <a class="" href="javascript:void()" aria-expanded="false">
+                    <i class="fa-sharp fa-solid fa-cog menu-icon"></i><span class="nav-text">Admin Tools</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
