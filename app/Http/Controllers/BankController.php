@@ -17,6 +17,11 @@ class BankController extends Controller
         $data=Bank::all();
         return view('banklist',['data'=>$data]);
     }
+    public function add_transfer()
+    {
+        $data=Bank::all();
+        return view('createtransfer',['data'=>$data]);
+    }
 
     /**
      * Show the form for creating a new resource.

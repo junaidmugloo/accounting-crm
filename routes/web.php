@@ -24,9 +24,7 @@ Route::get('/addbank', function () {
     return view('addbank');
 });
 
-Route::get('/addtransfer', function () {
-    return view('createtransfer');
-});
+
 Route::get('/transferlist', function () {
     return view('transferlist');
 });
@@ -36,4 +34,5 @@ Route::post('/store', [Accounts::class, 'store']);
 //bank routing
 Route::post('/store', [BankController::class, 'store']);
 Route::get('/banklist', [BankController::class, 'index']);
+Route::get('/addtransfer', [BankController::class,'add_transfer']);
 //end bank routing

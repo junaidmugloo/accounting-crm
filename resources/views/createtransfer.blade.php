@@ -103,21 +103,26 @@
                                         <div class="form-group">
                                             <label>From Account:</label>
                                             <select class="form-control" id="sel1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
+                                                <option>Select Account</option>
+                                                @foreach($data as $d)
+                                                <option>{{$d->acc_number}}</option>
+                                               @endforeach
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <label>To Account:</label>
                                             <select class="form-control" id="sel1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
+                                                <option>Select Account</option>
+                                                @foreach($data as $d)
+                                                <option>{{$d->acc_number}}</option>
+                                               @endforeach
                                             </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Initial Balance:</label>
+                                            <input class="form-control" type="number" placeholder="Initial Balance">
                                         </div>
 
                                         <div class="form-group">
