@@ -17,5 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/addbank', function () {
+    return view('addbank');
+});
+
 Route::get('/all', [Accounts::class, 'index']);
 Route::post('/store', [Accounts::class, 'store']);
