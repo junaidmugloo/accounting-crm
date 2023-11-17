@@ -1,22 +1,5 @@
-<div class="nav-header position-fixed">
-    <div class="brand-logo">
-        <a href="index.html">
-            <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
-            <span class="logo-compact"><img src="./images/logo-compact.png" alt=""></span>
-            <span class="brand-title">
-                <img src="images/logo-text.png" alt="">
-            </span>
-        </a>
-    </div>
-</div>
-<!--**********************************
-    Nav header end
-***********************************-->
 
-<!--**********************************
-    Header start
-***********************************-->
-<div class="header position-fixed">    
+<div style="right:0rem;"  class="header w-100 position-fixed" >    
     <div class="header-content clearfix">
         
         <div class="nav-control">
@@ -195,7 +178,7 @@
     </div>
 </div>
 
-<div class="nk-sidebar position-fixed">           
+<div  class="nk-sidebar position-fixed">           
     <div class="nk-nav-scroll">
         <ul class="metismenu" id="menu">
         
