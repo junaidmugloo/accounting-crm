@@ -22,6 +22,9 @@ Route::get('/', function () {
 Route::get('/addbank', function () {
     return view('addbank');
 });
+Route::get('/banklist', function () {
+    return view('banklist');
+});
 
 Route::get('/all', [Accounts::class, 'index']);
 Route::post('/store', [Accounts::class, 'store']);
