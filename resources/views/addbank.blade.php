@@ -96,51 +96,67 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
+                                {{-- @if ($errors->any())
+                                <div class="alert alert-danger">
+                                   <ul>
+                                     @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                     @endforeach
+                                    </ul>
+                                </div>
+                                @endif --}}
                                 <h4 class="card-title">Create Bank</h4>
                                 <div class="basic-form">
-                                    <form>
+                                    <form method="post" action="/store">
+                                        @csrf
                                         <div class="form-group row">
                                             <label class="col-sm-2  col-form-label">Bank Name</label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control" placeholder="Enter Bank Name">
+                                                <input type="text" value="{{ old('bank_name') }}"  name="bank_name" class="@error('bank_name') is-invalid @enderror form-control" placeholder="Enter Bank Name">
+                                                @error('bank_name')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Branch</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Branch Name">
+                                                <input type="text"  value="{{ old('branch') }}" name="branch" class="@error('bank_name') is-invalid @enderror form-control" placeholder="Enter Branch Name">
+                                                @error('branch')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Name</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Account Name">
+                                                <input type="text" name="acc_name" class="form-control" placeholder="Enter Account Name">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Holder</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Account Holder Name">
+                                                <input type="text" name="acc_holder" class="form-control" placeholder="Enter Account Holder Name">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Number</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Account Number">
+                                                <input type="text" name="acc_number" class="form-control" placeholder="Enter Account Number">
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Contact Number</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Contact Number">
+                                                <input type="text" name="contact_number" class="form-control" placeholder="Enter Contact Number">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Initial Balance</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" placeholder="Enter Initial Balance">
+                                                <input type="text" name="initial_balance" class="form-control" placeholder="Enter Initial Balance">
                                             </div>
                                         </div>
 
@@ -149,12 +165,12 @@
                                                 <label class="col-form-label col-sm-2 pt-0">Radios</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked="checked">
-                                                        <label class="form-check-label">First radio</label>
+                                                        <input class="form-check-input" type="radio" name="status" value="active" checked="checked">
+                                                        <label class="form-check-label">Active</label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
-                                                        <label class="form-check-label">Second radio</label>
+                                                        <input class="form-check-input" type="radio" name="status" value="inactive">
+                                                        <label class="form-check-label">Inactive</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,7 +183,11 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                             
+                          
+                            
+                        
+                        </div>
                         </div>
                     </div>
                 </div>

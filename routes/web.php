@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Accounts;
+use App\Http\Controllers\BankController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,7 @@ Route::get('/transferlist', function () {
 });
 Route::get('/all', [Accounts::class, 'index']);
 Route::post('/store', [Accounts::class, 'store']);
+
+//bank routing
+Route::post('/store', [BankController::class, 'store']);
+//end bank routing
