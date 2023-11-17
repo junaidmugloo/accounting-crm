@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Bank;
 use Illuminate\Http\Request;
-use Validator;
+
 class BankController extends Controller
 {
      /**
@@ -14,8 +14,8 @@ class BankController extends Controller
      */
     public function index()
     {
-        $data=Income::all();
-        return response()->json($data);
+        $data=Bank::all();
+        return view('banklist',['data'=>$data]);
     }
 
     /**

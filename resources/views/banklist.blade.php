@@ -97,28 +97,41 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Bank List</h4>
+                              
+                               
+                               
                                 <div class="table-responsive">
                                     <table class="table table-striped table-bordered zero-configuration">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>Bank Name</th>
+                                                <th>Branch</th>
+                                                <th>Account Type</th>
+                                                <th>Account Holder</th>
+                                                <th>Account Number</th>
+                                                <th>Contact Number</th>
+                                                <th>Initial Balance</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($data as $d)
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
+                                                <td>{{$d->bank_name}}</td>
+                                                <td>{{$d->branch}}</td>
+                                                <td>{{$d->acc_name}}</td>
+                                                <td>{{$d->acc_holder}}</td>
+                                                <td>{{$d->acc_number}}</td>
+                                                <td>{{$d->contact_number}}</td>
+                                                <td>{{$d->initial_balance}}</td>
+                                                @if($d->status=='active')
+                                                <td><p class="badge badge-pill badge-success">{{$d->status}}</p></td>
+                                                @else
+                                                <td><p class="badge badge-pill badge-danger">{{$d->status}}</p></td>
+                                                
+                                                @endif
                                             </tr>
-                                           
+                                            @endforeach
                                          
                                         </tbody>
                                         <tfoot>
