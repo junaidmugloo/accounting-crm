@@ -41,6 +41,12 @@ class BankController extends Controller
        $request->validate([
         'bank_name'=>['required','string'],
         'branch'=>['required','string'],
+        'acc_name'=>['required','string'],
+        'acc_holder'=>['required','string'],
+        'acc_number'=>['required','integer'],
+        'contact_number'=>['required','integer'],
+        'initial_balance'=>['required','integer'],
+        'status'=>['required'],
        ]);
 
 

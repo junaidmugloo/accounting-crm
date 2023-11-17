@@ -131,32 +131,48 @@
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Name</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="acc_name" class="form-control" placeholder="Enter Account Name">
+                                                <input type="text" value="{{ old('acc_name') }}" name="acc_name" class="@error('acc_name') is-invalid @enderror form-control" placeholder="Enter Account Name">
+                                                @error('acc_name')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Holder</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="acc_holder" class="form-control" placeholder="Enter Account Holder Name">
+                                                <input type="text" value="{{ old('acc_holder') }}" name="acc_holder" class="@error('acc_holder') is-invalid @enderror form-control" placeholder="Enter Account Holder Name">
+                                                @error('acc_holder')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Account Number</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="acc_number" class="form-control" placeholder="Enter Account Number">
+                                                <input type="text" value="{{ old('acc_number') }}" name="acc_number" class="@error('acc_number') is-invalid @enderror form-control" placeholder="Enter Account Number">
+                                                @error('acc_number')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
+                                        
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Contact Number</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="contact_number" class="form-control" placeholder="Enter Contact Number">
+                                                <input type="text" value="{{ old('contact_number') }}" name="contact_number" class="@error('contact_number') is-invalid @enderror form-control" placeholder="Enter Contact Number">
+                                                @error('contact_number')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Initial Balance</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="initial_balance" class="form-control" placeholder="Enter Initial Balance">
+                                                <input type="text" value="{{ old('initial_balance') }}" name="initial_balance" class="@error('initial_balance') is-invalid @enderror form-control" placeholder="Enter Initial Balance">
+                                                @error('initial_balance')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                         </div>
 
