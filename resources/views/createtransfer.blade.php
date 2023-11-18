@@ -98,36 +98,48 @@
                             <div class="card-body">
                                 <h4 class="card-title">Balance Transfer</h4>
                                 <div class="basic-form">
-                                    <form>
-                                        
+                                    <form method="post" action="addtransfer">
+                                        @csrf
                                         <div class="form-group">
                                             <label>From Account:</label>
-                                            <select class="form-control" id="sel1">
-                                                <option>Select Account</option>
+                                            <select name="from" class="form-control" id="sel1">
+                                                <option value="">Select Account</option>
                                                 @foreach($data as $d)
-                                                <option>{{$d->acc_number}}</option>
+                                                <option value="{{$d->acc_number}}">{{$d->acc_number}}</option>
                                                @endforeach
                                             </select>
+                                            @error('from')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group">
                                             <label>To Account:</label>
-                                            <select class="form-control" id="sel1">
-                                                <option>Select Account</option>
+                                            <select name="to" class="form-control" id="sel1">
+                                                <option value="">Select Account</option>
                                                 @foreach($data as $d)
-                                                <option>{{$d->acc_number}}</option>
+                                                <option value="{{$d->acc_number}}">{{$d->acc_number}}</option>
                                                @endforeach
                                             </select>
+                                            @error('to')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group">
                                             <label>Initial Balance:</label>
-                                            <input class="form-control" type="number" placeholder="Initial Balance">
+                                            <input name="initial_balance" class="form-control" type="number" placeholder="Initial Balance">
+                                            @error('initial_balance')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
 
                                         <div class="form-group">
                                             <label>Note:</label>
-                                            <textarea placeholder="Write Transfer Note" class="form-control"></textarea>
+                                            <textarea name="note" placeholder="Write Transfer Note" class="form-control"></textarea>
+                                            @error('note')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
 
                                        

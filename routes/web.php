@@ -35,4 +35,5 @@ Route::post('/store', [Accounts::class, 'store']);
 Route::post('/store', [BankController::class, 'store']);
 Route::get('/banklist', [BankController::class, 'index']);
 Route::get('/addtransfer', [BankController::class,'add_transfer']);
+Route::post('/addtransfer', [BankController::class,'add_transfer']);
 //end bank routing

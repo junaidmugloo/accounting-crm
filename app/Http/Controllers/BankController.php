@@ -17,10 +17,23 @@ class BankController extends Controller
         $data=Bank::all();
         return view('banklist',['data'=>$data]);
     }
-    public function add_transfer()
+    
+    public function add_transfer(Request $request)
     {
+        if($request->method('get')){
         $data=Bank::all();
         return view('createtransfer',['data'=>$data]);
+        }
+        if($request->method('post')){
+        
+            $request->validate([
+                'from'=>['required'],
+                'to'=>['required'],
+                'initial_balance'=>['required'],
+                'note'=>['required'],
+            ]);
+                
+        }
     }
 
     /**
