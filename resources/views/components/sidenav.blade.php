@@ -205,8 +205,27 @@
                     <i class="fa-sharp fa-solid fa-file-invoice-dollar menu-icon"></i> <span class="nav-text">Payment</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./email-inbox.html">Create Payment</a></li>
-                    <li><a href="./email-read.html">Payment List</a></li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="fa-solid fa-file-invoice menu-icon"></i> <span class="nav-text">Create Payment</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./email-inbox.html">Payment< Voucher</a></li>
+                            <li><a href="./email-read.html">Payment Invoice</a></li>
+                          
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="fa-solid fa-file-invoice menu-icon"></i> <span class="nav-text">Payment List</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./email-inbox.html">Voucher List</a></li>
+                            <li><a href="./email-read.html">Invoice List</a></li>
+                          
+                        </ul>
+                    </li>
                   
                 </ul>
             </li>
